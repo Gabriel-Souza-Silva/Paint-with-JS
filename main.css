@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    background-color: white;
+}
+
+.header{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+.btn {
+    height: 85%;
+    width: 10%;
+    margin: auto;
+    background-color: #5133e9;
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(81,51,233, 0.46);
+    transition: box-shadow 500ms;
+}
+
+.btn:hover {
+    cursor:pointer;
+    box-shadow: 0 3px 10px rgba(81,51,233, 0.9);
+  }
+
+span{
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 30px;
+} 
+
+.div-input{
+    display:inline;
+}
+
+.div-input span{
+    font-size: 20px;
+}
+
+.limpar{
+    float: right;
+    margin-right: 3px;
+    margin-top:3px;
+}
+
+.imgExport{
+    height: 100px;
+    width:  100px;
+    position: fixed;
+    top:900px;
+    left: 2400px;
+}

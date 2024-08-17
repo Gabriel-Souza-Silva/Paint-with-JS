@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desenhador Gabrieis e Victor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu.css" />
+</head>
+<body>
+   <div class="header" id="header"></div>
+   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+   <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+   </label>
+
+
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li id="btnPonto"><a class="btn" ><a>Ponto</a></li>
+            <li id="btnlinha"><a class="btn" >Linha</a></li>
+            <li id="btnCirculo"><a class="btn" >Circulo</a></li>
+            <li id="btnRetangulo"><a class="btn" >Retangulo</a></li>
+            <li id="btnPoligono"><a class="btn">Poligono</a></li>
+            <li id="btnForma"><a class="btn" >Forma</a></li>
+            <li id="btnEspecifico"><a class="btn" >Especifico</a></li>
+            <li id="btnLimpar"><a class="btn limpar" >Limpa</a></li>
+            <li id="btnClip"><a class="btn" >Cortar</a></li>
+            <li>
+                <span>Cor Em Hex:</span>
+                <input id="color-pik" class="jscolor" value="5333ed">
+            </li>
+            <li id="cicleDiv">
+                <span>Ciclos</span>
+                <input id="cicleId" width="20px" type="number" min="1" value="5">
+            </li>
+            
+            <li>
+                <canvas id="canvasMini" width="300" height="128" style="background-color:white"></canvas> 
+            </li>
+            <li id="btnExportar"><a class="btn" href="https://jsonformatter.org/json-viewer" target="blank">Exportar</a></li>
+        
+            <li class="image-upload">
+                <label for="file-input">
+                    <span class="btn" style="color:white; font-size:17px;">Importar</span>
+                </label>
+            
+                <input id="file-input" type="file"/>
+            </li>
+        </ul>
+    </div>
+        
+    
+    <canvas id="canvas" width="2560" height="1080" style="cursor:crosshair;"></canvas> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="main.js"></script>    
+</body>
+</html>
